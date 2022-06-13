@@ -1,10 +1,11 @@
-import "./Card.css";
+import React from 'react';
 
-function Card(props) {
-  // here we are adding two classes to our component, one is card class and then its own class
-  const classes = "card " + props.className;
+import './Card.css';
+
+const Card = (props) => {
+  const classes = 'card ' + props.className;
 
   return <div className={classes}>{props.children}</div>;
-}
+};
 
 export default Card;
